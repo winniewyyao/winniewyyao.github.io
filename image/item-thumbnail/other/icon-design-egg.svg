@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="sunny_egg" data-name="sunny egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #e99e3a;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        opacity: .5;
+      }
+
+      .cls-3 {
+        fill: none;
+        opacity: .9;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-5 {
+        fill: #ffce07;
+      }
+
+      .cls-4 {
+        fill: #f6c9c4;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="200" cy="200" r="121.79"/>
+  <path id="egg_white" data-name="egg white" class="cls-1" d="M265.94,200.24c0,16.4-14.53,30.97-22.78,42.82-10.96,15.73-28.91,30.42-49.13,30.42s-18.05-24.61-28.25-48.14c-7.74-17.84-33.05-38.27-33.05-54.74,0-21.65,7.47-40.43,20.34-43.7,9.82-2.5,22.74,8.34,38.08,8.34,18.96,0,49.85-1.95,61.6,12.13,6.49,7.78,15.32,27.15,14.46,35.87-.49,5-1.27,10.53-1.27,17.01Z"/>
+  <circle id="yolk" class="cls-5" cx="200" cy="193.61" r="25.65"/>
+  <path id="shadow_on_yolk" data-name="shadow on yolk" class="cls-3" d="M182.18,192.6c.03-1.46.33-6.32,4.08-10.49,3.41-3.79,7.67-4.77,9.18-5.04"/>
+  <path id="shadow" class="cls-2" d="M200,167.96c-14.17,0-25.65,11.49-25.65,25.65,0,10.5,6.31,19.53,15.35,23.49l35.69-27.18c-1.79-12.42-12.47-21.97-25.39-21.97Z"/>
+</svg>
