@@ -1,12 +1,19 @@
+.project-section{
+    width: 80%;
+    margin: auto auto;
+}
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    /* width: 50%; */
+    margin: 0 auto;
 }
 
 .project-item {
     border: 1px solid rgb(201, 199, 199);
     padding: 0.5rem;
+    background-color: #ffffff9d;
 }
 
 .other-project-item {
@@ -38,6 +45,15 @@
     font-weight: 600;
     margin: 5% 0 0 0;
 }
+
+.item-description {
+    font-family: Inter, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 2% 0 0 0;
+    color: #000000;
+}
+
 
 #video {
     font-family: Inter, sans-serif;
