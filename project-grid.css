@@ -16,9 +16,20 @@
     background-color: #ffffff9d;
 }
 
-.other-project-item {
-    /* border: 1px solid rgb(201, 199, 199); */
-    padding: 0rem;
+.design-project-container {
+  width: 80%;
+  margin: auto auto;
+  display: flex;
+  justify-content: center; /* spreads them out */
+  align-items: flex-start; /* align items at the top (optional) */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 1rem; /* optional spacing between items */
+}
+
+.design-project-item {
+  /* padding: 0; */
+  width: 40%; /* each item takes up 40% of the container width */
+  /* box-sizing: border-box; */
 }
 
 
@@ -55,7 +66,7 @@
 }
 
 
-#video {
+/* #video {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
@@ -71,4 +82,4 @@
     margin: 2% auto;
     text-align: center;
     color: #006676;
-}
+} */
