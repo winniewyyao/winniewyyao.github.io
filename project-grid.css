@@ -36,8 +36,13 @@
 
 .design-project-item {
   /* padding: 0; */
-  width: 40%; /* each item takes up 40% of the container width */
+  width: 45%; /* each item takes up 40% of the container width */
   /* box-sizing: border-box; */
+}
+
+.design-item-gif {
+  width: 93%;
+  margin: 0 auto;
 }
 
 
