@@ -12,8 +12,8 @@ body{
 }
 
 .bio-section {
-    width: 80%;
-    margin: 0 auto;
+    width: 60%;
+    margin: auto auto;
     /* gap: 2rem */
 }
 
@@ -26,20 +26,18 @@ body{
 }
 
 #highlight{
-    /* background: linear-gradient(180deg, transparent 60%, #fbe24f 50%); */
-    background:
-    url('image/texture-effect/test.png');
-    background-blend-mode: multiply;
-    background-size: cover; 
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 0.2em 0.1em;
+    /* background:
+    url('image/texture-effect/test.png'); */
+    background: linear-gradient(180deg, transparent 60%, rgb(253, 225, 66) 50%); 
+    -webkit-box-decoration-break: clone; box-decoration-break: clone; 
+    background-size: 100% 80%; 
+    padding: 0.2em 0.1em; 
     display: inline;
 }
 
 .self-intro-container{
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .self-intro-container p {
