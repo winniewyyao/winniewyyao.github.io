@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winnie W.Y. Yao</title>
+  <link rel="icon" type="image/jpg" href="/image/favicon.png"/>
+  <link rel="stylesheet" href="main-structure.css" />
+  <link rel="stylesheet" href="project-grid.css" />
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<style>
+body {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  min-height: 100vh;       /* full viewport height */
+  margin: 0;               /* remove default margin and padding */
+  padding: 0;
+}
+
+/* Container for the photo + text */
+.about-container {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  gap: 3rem;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  margin: 1.3rem auto;
+  width: 60%; /* container width on desktop */
+  max-width: 1000px; /* optional: prevent too wide */
+  padding: 0 1rem;
+}
+
+/* Photo container */
+.photo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Photo styling */
+.about-page-photo {
+  max-width: 250px; 
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text container */
+.about-text-container {
+  flex: 2;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: black;
+}
+
+.about-text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left; /* align heading with text */
+  color: black;
+}
+
+.about-text-container p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive layout for smaller screens */
+/* Responsive layout */
+@media (max-width: 767px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center; /* center content on small screens */
+    width: 90%; /* narrower width for mobile */
+  }
+
+  .about-text-container {
+    text-align: center;
+  }
+  .about-text-container h2 {
+  text-align: center;
+  }
+}
+</style>
+
+<body>
+    <div class="menubar">
+        <div id="myLinks">
+            <a href="index.html">Portfolio</a>
+            <a href="#Photography">Photography</a>
+            <a href="#chinesework">Chinese Work</a>
+            <a href="about.html">About</a>
+        </div>
+        <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="about-container">
+        <div class="photo-container">
+            <image src="image/about-me.JPG" alt="Winnie Yao" class="about-page-photo"/>
+        </div>
+
+        <div class="about-text-container">
+            <h2>About Me</h2>
+            <p>Hi! My name is WanYu Yao. I go by Winnie in English. I'm a master's student at the University of California, Berkeley, where I study 
+                <span class="bio-work-experience">
+                    <a href="https://journalism.berkeley.edu/person/wanyu_yao/" target="_blank" class="hover">
+                        journalism</a>
+                </span> 
+                and pursue a data science certificate.
+            </p>
+            <p>I have an interdisciplinary background spanning journalism, public relations and marketing. 
+                Along the way, I’ve discovered that my passions come together at the intersection of data graphics, visual design and multimedia storytelling. 
+                I love transforming information into engaging visuals that tell compelling stories.</p>
+            <p>Before coming to Berkeley, I earned double majors in Journalism and Political Science at National Chengchi University in Taipei, Taiwan.</p>
+            <p>I speak Mandarin, English, Hokkien and basic Korean.</p>
+            <p style="font-size: 0.85rem; color: grey">When I’m not on a deadline, you might find me piecing together jigsaw puzzles. 🧩 ✨</p>
+            <p>📄 View my resume <a href="asset/pdf-file/winnie-wy-yao-resume.pdf" target="_blank" class="hover bio-work-experience">here</a>.</p>
+            <p>🙋🏻‍♀️ Check out my <a href="index.html" class="hover bio-work-experience">portfolio</a>.</p>
+
+        </div>
+    </div>
+</body>
+</html>

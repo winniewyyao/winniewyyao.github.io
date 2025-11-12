@@ -1,4 +1,68 @@
 
+/* Container for menu */
+.menubar {
+  position: relative;
+  z-index: 100;
+}
+
+/* Hamburger button */
+.hamburger-icon {
+  font-size: 1.2rem;
+  position: fixed;
+  left: 3%;
+  top: 1.5em;
+  color: black;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon:hover {
+  color: rgb(250, 202, 27);
+  /* background-color: rgba(253, 225, 66, 0.85); */
+}
+
+.hamburger-icon.active {
+  color: rgb(250, 202, 27);
+}
+
+/* Dropdown menu */
+#myLinks {
+  display: none; /* hidden by default */
+  position: fixed; /* dropdown sticks relative to viewport */
+  top: 4em; 
+  left: 3%;
+  /* background-color: rgba(253, 225, 66, 0.85); */
+  /* border-radius: 2px; */
+  padding: 0em 0;
+  flex-direction: column; /* stack links vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Each link in dropdown */
+#myLinks a {
+  display: block;      /* new line for each */
+  padding: 0.5em 1em;  /* spacing inside the dropdown */
+  color: black;
+  background-color: rgba(255, 255, 255, 0.704);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  /* text-decoration: none; */
+  /* transition: background 0.3s ease; */
+}
+
+#myLinks a:hover {
+  background-color: rgba(250, 202, 27, 0.504);
+  border-radius: 3px;
+}
+
 body{
     background-color: #FDF5EC ;
     /* background-color: #f3f2f2 ; */
@@ -6,7 +70,7 @@ body{
 
 .container{
     width: 50%;
-    margin: 2.5rem auto;
+    margin: 2rem auto;
     /* border-left: #000000 1px solid;
     border-right:#000000 1px solid; */
 }
@@ -30,8 +94,8 @@ body{
     url('image/texture-effect/test.png'); */
     background: linear-gradient(180deg, transparent 60%, rgb(253, 225, 66) 50%); 
     -webkit-box-decoration-break: clone; box-decoration-break: clone; 
-    background-size: 100% 80%; 
-    padding: 0.2em 0.1em; 
+    background-size: 100% 90%; 
+    /* padding: 0.2em 0.1em;  */
     display: inline;
 }
 
