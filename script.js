@@ -1,23 +1,31 @@
 function myFunction() {
   var menu = document.getElementById("myLinks");
-  var hamburger = document.querySelector(".hamburger-icon");
+  var hamburger = document.querySelector(".hamburger-icon i"); // target the <i> itself
+  var iconWrapper = document.querySelector(".hamburger-icon");
 
   if (menu.style.display === "block") {
     menu.style.display = "none";
-    hamburger.classList.remove("active"); // remove active color
+    iconWrapper.classList.remove("active");
+    hamburger.classList.remove("fa-xmark");
+    hamburger.classList.add("fa-bars");
   } else {
     menu.style.display = "block";
-    hamburger.classList.add("active");    // add active color
+    iconWrapper.classList.add("active");
+    hamburger.classList.remove("fa-bars");
+    hamburger.classList.add("fa-xmark");
   }
 }
 
 // Close dropdown if clicked outside
 document.addEventListener("click", function(event) {
   var menu = document.getElementById("myLinks");
-  var hamburger = document.querySelector(".hamburger-icon");
+  var iconWrapper = document.querySelector(".hamburger-icon");
+  var hamburger = document.querySelector(".hamburger-icon i");
 
-  if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+  if (!menu.contains(event.target) && !iconWrapper.contains(event.target)) {
     menu.style.display = "none";
-    hamburger.classList.remove("active"); // remove active color
+    iconWrapper.classList.remove("active");
+    hamburger.classList.remove("fa-xmark");
+    hamburger.classList.add("fa-bars");
   }
 });

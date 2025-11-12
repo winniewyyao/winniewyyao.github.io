@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: transform 0.7s ease;
 }
 
 .hamburger-icon:hover {
@@ -29,7 +29,10 @@
 
 .hamburger-icon.active {
   color: rgb(250, 202, 27);
+  transform: rotate(90deg);
 }
+
+
 
 /* Dropdown menu */
 #myLinks {
