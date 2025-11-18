@@ -116,8 +116,12 @@
   background-color: #199900;
 }
 
-.tool-html-css{
+/* .tool-html-css{
   background-color: #E34F26;
+} */
+
+.tool-javascript{
+  background-color: #e4cd1f
 }
 
 .tool-illustrator{
@@ -142,6 +146,10 @@
 
 .tool-qgis {
   background-color: #4CAF50;
+}
+
+.tool-r {
+  background-color: #276DC3;
 }
 
 
