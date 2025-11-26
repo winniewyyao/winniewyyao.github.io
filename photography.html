@@ -23,14 +23,14 @@
 
     /* Slideshow container */
     .slideshow-container {
-    width: 1000px;
+    width: 800px;
     position: relative;
-    margin: 3.5% auto 0 auto;
+    margin: 4.5% auto 0 auto;
     }
 
     .mySlides1 img {
     width: 100%;
-    height: 600px;
+    height: 520px;
     object-fit: contain;
     }
 
@@ -81,7 +81,7 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-35%);
     padding: 12px 8px;
     font-weight: bold;
     font-size: 18px;
@@ -103,7 +103,7 @@
     justify-content: center;
     margin-top: 2%;
     font-size: 1rem;
-    color: #646363;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
@@ -112,7 +112,7 @@
     display: flex;
     justify-content: center;
     font-size: 0.8rem;
-    color: #909090;
+    color: grey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verd
 
     }
@@ -136,6 +136,7 @@
   .prev, .next {
     padding: 10px 14px;
     font-size: 18px;
+    color: blanchedalmond;
   }
 
   .prev { left: 18px; }
@@ -197,9 +198,9 @@
     <div class="menubar">
         <div id="myLinks">
             <a href="index.html">Portfolio</a>
+            <a href="about.html">About Me</a>
             <a href="photography.html">Photography</a>
             <a href="chinesework.html">Chinese Work</a>
-            <a href="about.html">About Me</a>
         </div>
         <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
             <i class="fa-solid fa-bars"></i>
@@ -210,26 +211,36 @@
     <div class="page-container">
         <div class="slideshow-container">
             <div class="mySlides1">
-                <img src="photography/photo1.JPEG" style="width:100%">
+                <img src="photography/santa-monica.JPEG" style="width:100%" alt="Santa Monica, CA">
                 <p class="photo-caption">Santa Monica, CA</p>
                 <p class="camera-model">Kodak film camera</p>
             </div>
             <div class="mySlides1">
-                <img src="photography/photo2.JPG" style="width:100%">
+                <img src="photography/amtrak.jpeg" style="width:100%" alt="On the Amtrak, Utah">
                 <p class="photo-caption">On the Amtrak🚂, Utah</p>
                 <p class="camera-model">Canon EOS M50</p>
             </div>
             <div class="mySlides1">
-                <img src="photography/photo3.jpg" style="width:100%">
+                <img src="photography/rocky-mountain.jpeg" style="width:100%" alt="Rocky Mountain National Park, CO">
                 <p class="photo-caption">Rocky Mountain National Park, CO</p>
                 <p class="camera-model">Canon EOS M50</p>
+            </div>
+            <div class="mySlides1">
+                <img src="photography/tumsui-river.jpeg" style="width:100%" alt="Tamsui River, Taipei, Taiwan">
+                <p class="photo-caption">Tamsui River, Taipei, Taiwan</p>
+                <p class="camera-model">Fuji film camera</p>
+            </div>
+            <div class="mySlides1">
+                <img src="photography/yilan-suao-harbor.jpeg" style="width:100%" alt="Suao Harbor, Yilan, Taiwan">
+                <p class="photo-caption">Suao Harbor, Yilan, Taiwan</p>
+                <p class="camera-model">Fuji film camera</p>
             </div>
             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
     </div>
 
-    <!-- <footer id="photo-footer">© 2025 WanYu Yao</footer> -->
+    <footer id="photo-footer">© 2025 WanYu Yao</footer>
 </body>
 
 <script>
