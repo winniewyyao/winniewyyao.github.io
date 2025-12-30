@@ -1,3 +1,6 @@
+
+// navigation menu toggle
+
 function myFunction() {
   var menu = document.getElementById("myLinks");
   var hamburger = document.querySelector(".hamburger-icon i"); // target the <i> itself

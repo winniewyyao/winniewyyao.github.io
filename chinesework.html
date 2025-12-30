@@ -7,15 +7,41 @@
   <link rel="icon" type="image/jpg" href="/image/favicon.png"/>
   <link rel="stylesheet" href="main-structure.css" />
   <link rel="stylesheet" href="project-grid.css" />
-  <script src="main.js"></script>
+  <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <style>
-    .construction {
+    /* .construction {
         text-align: center;
         margin-top: 20%;
+    } */
+
+    .container {
+        width: 70%;
+        margin: 4rem auto;
+        border: 1px solid #5d5c5c;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .iframe-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .iframe-container iframe {
+        width: 100%;
+        aspect-ratio: 16 / 16;
+        height: auto;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     p{
@@ -24,18 +50,62 @@
         font-weight: 400;
     }
 
+    h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+
     a{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 1rem;
         font-weight: 400;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
 </style>
 
 <body>
-    <div class="construction">
+
+    <div class="menubar">
+        <div id="myLinks">
+            <a href="index.html">Portfolio</a>
+            <a href="about.html">About Me</a>
+            <a href="photography.html">Photography</a>
+            <a href="chinesework.html">Chinese Work</a>
+        </div>
+        <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- <div class="construction">
         <p><strong> This page is under construction 🚧 </strong></p>
         <a href="index.html">Back to projects</a>
+    </div> -->
+
+    <div class="container">
+        <div class="text-container">
+            <p>嗨咿我是宛妤，歡迎來到我的作品集！</p>
+            <p>大學念了兩所學校三個系，這些文字和影音多半來自課堂作業或實習作品，它們代表了我初成年後對世界的想像。</p>
+            <p>替十八到二十歲初的想法留個念。我曾經是因為在課堂上吸收知識、反思人生而感到無比快樂的大學生🌼</p>
+        </div>
+        <!-- <h2>影片</h2> -->
+        <div>
+
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/I47l00Fw9vM?si=3YQcEQWtA07JQPMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/BNa_Ezrp9GM?si=nuG4_r8IzHc5jld7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jVRx3T9hx9Q?si=V2br_1IhyUF3dYEe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/iA_Rhqb_h70?si=mGGDHGKjd5EVblJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/i-egS2a-o-w?si=wyH2-KEe4AWkaohD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/6ILj2Sg7bfA?si=0bFvbOPkqRSDcWlb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SOa50z4kKvw?si=MH3fwhSoayPSLDDP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4UGVYGUR66s?si=iG89gQDe_TbeH9AL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/c4B5BNo55wg?si=V14d6zz9ZkLF0Q6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
+
 </body>
