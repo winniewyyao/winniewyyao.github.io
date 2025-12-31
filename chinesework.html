@@ -19,11 +19,76 @@
     } */
 
     .container {
-        width: 70%;
-        margin: 4rem auto;
-        border: 1px solid #5d5c5c;
-        padding: 2rem;
-        box-sizing: border-box;
+        width: 50%;
+        margin: 4rem auto 0 auto;
+        /* padding: 2rem; */
+    }
+
+    .pdf-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        /* width: 100%; */
+        margin: 0 auto 4rem auto;
+    }
+
+    .pdf-item {
+        border: 1px solid rgb(201, 199, 199);
+        padding: 0.5rem;
+        background-color: #ffffffbf;
+        position: relative; /* allows top movement on hover */
+        transition: all 0.3s ease; /* smooth animation for hover */
+    }
+
+    .pdf-item:hover{
+        /* top: -3px; */
+        background-color: #ffffffbf;
+        box-shadow: 0px 5px 7px -2px rgba(92, 91, 91, 0.3);
+    }
+
+    h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 5% 0 0 0;
+    }
+
+    .thumbnail-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 100%; /* creates a 1:1 aspect ratio */
+        overflow: hidden;
+    }
+
+    .thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .toolkit{
+        display: inline-block;
+        padding: 0.2rem 0.3rem;
+        border-radius: 8px;
+        font-size: 0.68rem;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 4% 0 1% 0;
+    }
+
+    .tool-tableau{
+        background-color: #E97627;
+    }
+
+    .tool-pro-tools{
+        background-color: #740bb0;
+    }
+
+    .tool-lightroom{
+        background-color: #31A8FF;
     }
 
     .iframe-container {
@@ -31,6 +96,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        margin-bottom: 2rem;
     }
 
     .iframe-container iframe {
@@ -39,7 +105,7 @@
         height: auto;
     }
 
-    .text-container {
+    .introduction-text-container {
         width: 100%;
         margin-bottom: 2rem;
     }
@@ -49,13 +115,13 @@
         font-size: 1rem;
         font-weight: 400;
     }
-
+/* 
     h2{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 1rem;
         font-weight: 600;
         margin-top: 2rem;
-    }
+    } */
 
     a{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -63,6 +129,75 @@
         font-weight: 400;
         text-decoration: none;
     }
+
+/* Tablet responsive adjustments */
+@media (max-width: 820px) {
+    .container {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+    }
+
+    .pdf-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .iframe-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .introduction-text-container p {
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 1rem auto 0 auto;
+    }
+
+    .pdf-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.6rem;
+    }
+
+    .iframe-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .introduction-text-container p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    h3 {
+        font-size: 0.75rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+
+    .pdf-item {
+        padding: 0.3rem;
+    }
+
+    .iframe-container iframe {
+        aspect-ratio: 16 / 9;
+    }
+}
 
 </style>
 
@@ -86,16 +221,73 @@
     </div> -->
 
     <div class="container">
-        <div class="text-container">
-            <p>嗨咿我是宛妤，歡迎來到我的作品集！</p>
-            <p>大學念了兩所學校三個系，這些文字和影音多半來自課堂作業或實習作品，它們代表了我初成年後對世界的想像。</p>
-            <p>替十八到二十歲初的想法留個念。我曾經是因為在課堂上吸收知識、反思人生而感到無比快樂的大學生🌼</p>
+        <div class="introduction-text-container">
+            <p>嗨咿我是宛妤，歡迎來到我的作品集網頁！</p>
+            <p>大學念了兩所學校三個系，這些文字和影音多半來自課堂作業或實習作品，它們代表了我初成年後對世界的想像。替十八到二十歲初的想法留個念。我曾經是因為吸收知識、反思人生而感到快樂的大學生🌼</p>
         </div>
-        <!-- <h2>影片</h2> -->
-        <div>
 
-        </div>
-        <div class="iframe-container">
+        <section class="pdf-container">
+            <!-- item -->   
+                <a href="asset/pdf-file/chinese-work/資訊視覺化林業保育署自然步道資料庫分析.pdf" target="_blank">
+                <div class="pdf-item">
+                    <div class="thumbnail-wrapper">
+                        <img src="image/item-thumbnail/chinese-work/taiwan-trail-data-viz.png" class="thumbnail" alt="林業保育署自然步道資料庫分析"/>
+                    </div>
+                    <h3>資料分析與視覺化專案—臺灣林業保育署自然步道分析</h3>
+                    <!-- <h4 class="item-description">臺灣自然步道的資料分析與視覺化</h4> -->
+                    <strong class="toolkit tool-tableau">Tableau</strong>
+                </div></a>
+            <!-- item -->   
+                <a href="asset/pdf-file/chinese-work/旅人老闆推廣異國美食.pdf" target="_blank">
+                <div class="pdf-item">
+                    <div class="thumbnail-wrapper">
+                        <img src="image/item-thumbnail/chinese-work/wave-jaffa.png" class="thumbnail" alt="旅人老闆推廣異國美食"/>
+                    </div>
+                    <h3>飲食與文化：八千多公里外的距離 旅人老闆推廣異國美食</h3>
+                    <!-- <h4 class="item-description">旅人老闆推廣異國美食</h4> -->
+                </div></a>
+            <!-- item -->   
+                <a href="asset/pdf-file/chinese-work/攝影計畫-隔齡童話.pdf" target="_blank">
+                <div class="pdf-item">
+                    <div class="thumbnail-wrapper">
+                        <img src="image/item-thumbnail/chinese-work/children-fairytale.png" class="thumbnail" alt="靜態影像設計攝影計畫"/>
+                    </div>
+                    <h3>靜態影像設計：隔齡童話</h3>
+                    <!-- <h4 class="item-description">攝影計畫</h4> -->
+                    <strong class="toolkit tool-lightroom">Lightroom</strong>
+                </div></a>
+            <!-- item -->   
+                <a href="asset/pdf-file/chinese-work/強勢政治下的溫情流露-中國時裝劇與國族文化認同建構.pdf" target="_blank">
+                <div class="pdf-item">
+                    <div class="thumbnail-wrapper">
+                        <img src="image/item-thumbnail/chinese-work/mass-culture-family-name.png" class="thumbnail" alt="強勢政治下的溫情流露 中國時裝劇與國族文化認同建構"/>
+                    </div>
+                    <h3>大眾文化研究：中國時裝劇與國族文化認同建構</h3>
+                    <!-- <h4 class="item-description"中國時裝劇與國族文化認同建構</h4> -->
+                </div></a>
+            <!-- item -->   
+                <a href="asset/pdf-file/chinese-work/深海魚.pdf" target="_blank">
+                <div class="pdf-item">
+                    <div class="thumbnail-wrapper">
+                        <img src="image/item-thumbnail/chinese-work/deep-sea-fish.png" class="thumbnail" alt="傳播敘事：深海魚"/>
+                    </div>
+                    <h3>傳播敘事：深海魚</h3>
+                    <!-- <h4 class="item-description">傳播敘事深海魚</h4> -->
+                </div></a>
+            <!-- item -->   
+                <a href="asset/pdf-file/chinese-work/欸！鄉民為什麼就針對知識型網紅.pdf" target="_blank">
+                <div class="pdf-item">
+                    <div class="thumbnail-wrapper">
+                        <img src="image/item-thumbnail/chinese-work/cookies-podcast-influencer.png" class="thumbnail" alt="欸！鄉民為什麼就針對知識型網紅"/>
+                    </div>
+                    <h3>大眾文化研究：欸！鄉民為什麼就針對知識型網紅</h3>
+                    <!-- <h4 class="item-description">欸！鄉民為什麼就針對知識型網紅</h4> -->
+                    <strong class="toolkit tool-pro-tools">pro tools</strong>
+                </div></a>
+        </section>
+
+
+        <section class="iframe-container">
             <iframe src="https://www.youtube.com/embed/I47l00Fw9vM?si=3YQcEQWtA07JQPMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/BNa_Ezrp9GM?si=nuG4_r8IzHc5jld7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/jVRx3T9hx9Q?si=V2br_1IhyUF3dYEe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -105,7 +297,10 @@
             <iframe src="https://www.youtube.com/embed/SOa50z4kKvw?si=MH3fwhSoayPSLDDP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/4UGVYGUR66s?si=iG89gQDe_TbeH9AL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/c4B5BNo55wg?si=V14d6zz9ZkLF0Q6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        </section>
+    
+        <footer>© 2025 WanYu Yao</footer>
+    
     </div>
-
+    
 </body>
