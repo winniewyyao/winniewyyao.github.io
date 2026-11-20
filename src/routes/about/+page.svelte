@@ -31,7 +31,7 @@
 
 <div class="about-container">
   <div class="photo-container">
-    <img src="/image/about-me.JPG" alt="Winnie Yao" class="about-page-photo" />
+    <img src="/image/about-me.png" alt="Winnie Yao" class="about-page-photo" />
   </div>
 
   <div class="about-text-container">
@@ -75,7 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* center the photo */
-  gap: 2rem;
+  gap: 1rem;
   margin: 2rem auto;
   width: 60%; /* container width on desktop */
   max-width: 1000px; /* optional: prevent too wide */
@@ -91,7 +91,7 @@
 
 /* Photo styling */
 .about-page-photo {
-  max-width: 220px; 
+  max-width: 300px; 
   width: 100%;
   object-fit: cover;
 }
